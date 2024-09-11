@@ -16,11 +16,9 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
-        with:
-          node-version: 18
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@v4
 
       - name: Build project
         run: npm run build
